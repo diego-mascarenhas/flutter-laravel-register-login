@@ -47,3 +47,5 @@ app.*.map.json
 
 # Flutter
 .env
+/ios/*
+/pubspec.lock
