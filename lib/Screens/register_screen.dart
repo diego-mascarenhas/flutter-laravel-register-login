@@ -1,6 +1,5 @@
 import 'dart:convert';
 
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutterapp/Services/auth_services.dart';
 import 'package:flutterapp/Services/globals.dart';
@@ -48,7 +47,7 @@ class _RegisterScreenState extends State<RegisterScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        backgroundColor: Colors.black,
+        backgroundColor: const Color(0xff7367f0),
         centerTitle: true,
         elevation: 0,
         title: const Text(
@@ -56,7 +55,11 @@ class _RegisterScreenState extends State<RegisterScreen> {
           style: TextStyle(
             fontSize: 20,
             fontWeight: FontWeight.bold,
+            color: Colors.white,
           ),
+        ),
+        iconTheme: const IconThemeData(
+          color: Colors.white,
         ),
       ),
       body: Padding(

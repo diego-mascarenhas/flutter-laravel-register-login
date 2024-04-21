@@ -41,7 +41,7 @@ class _LoginScreenState extends State<LoginScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
         appBar: AppBar(
-          backgroundColor: Colors.black,
+          backgroundColor: const Color(0xff7367f0),
           centerTitle: true,
           elevation: 0,
           title: const Text(
@@ -49,7 +49,11 @@ class _LoginScreenState extends State<LoginScreen> {
             style: TextStyle(
               fontSize: 20,
               fontWeight: FontWeight.bold,
+              color: Colors.white,
             ),
+          ),
+          iconTheme: const IconThemeData(
+            color: Colors.white,
           ),
         ),
         body: Padding(
@@ -83,7 +87,7 @@ class _LoginScreenState extends State<LoginScreen> {
                 height: 30,
               ),
               RoundedButton(
-                btnText: 'LOG IN',
+                btnText: 'Login',
                 onBtnPressed: () => loginPressed(),
               )
             ],

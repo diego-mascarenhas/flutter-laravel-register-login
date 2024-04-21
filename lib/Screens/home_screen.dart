@@ -7,7 +7,7 @@ class HomeScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.blue,
+      backgroundColor: const Color(0xff7367f0),
       body: Center(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,

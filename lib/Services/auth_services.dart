@@ -11,14 +11,16 @@ class AuthServices {
       "email": email,
       "password": password,
     };
+
     var body = json.encode(data);
-    var url = Uri.parse(baseURL + 'mobile/register');
+    var url = Uri.parse('${baseURL}mobile/register');
+
     http.Response response = await http.post(
       url,
       headers: headers,
       body: body,
     );
-    print(response.body);
+
     return response;
   }
 
@@ -27,14 +29,16 @@ class AuthServices {
       "email": email,
       "password": password,
     };
+
     var body = json.encode(data);
-    var url = Uri.parse(baseURL + 'mobile/login');
+    var url = Uri.parse('${baseURL}mobile/login');
+
     http.Response response = await http.post(
       url,
       headers: headers,
       body: body,
     );
-    print(response.body);
+
     return response;
   }
 }
